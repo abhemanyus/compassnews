@@ -37,16 +37,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        
         with:
           submodules: recursive
+
       - name: Use Node.js 
         uses: actions/setup-node@v4
         with:
           node-version: 20.14.0
           cache: 'npm'
           
-      - run: npm ci
+      - run: npm i
       - run: npm run build --if-present -- --base="/compassnews/"
       
       - name: Setup Pages
