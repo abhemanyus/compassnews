@@ -3,53 +3,23 @@ See things happening around you
 
 Collect news reports and geographic information, displays it on a map
 
-# React + TypeScript + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Wishlist
+1. Can see local events on map
+2. Can create local events on map
+3. Can sort events by severity
+4. Can sort events by type
+5. Can show events for a small area (locality)
+6. Can arrange events in tiers/levels, revealed by zooming
+7. Can upload images of events
+8. Can add geotag info from image  metadata, from device gps, or from manual selection
+9. Partition application data by country/state/district, maybe call them "super-tiers"
+10. Display events on map when on appropriate zoom level to avoid overcrowding
+11. Display image thumbnail on map
+12. Multiple event image upload support
+13. User can add text explaining event, link to news article, etc
+14. Use techniques to prevent attacks, only humans can use
+15. Rate-limit humans
+16. Anonymous uploads, no account required
+17. Create summaries from local events, partitioned by category
+18. Offline image capture and delayed upload support with PWA and service workers
+19. Alerts and notifications
